@@ -1,4 +1,3 @@
-//Output:  2--> 10 --> 5 --> 12 --> 14-->null
 class LinkedList {
     constructor(value) {
         this.head = {
@@ -60,6 +59,16 @@ class LinkedList {
 
         
     }
+
+    //remove an item from the LinkedList
+      remove(index) {
+        const leader = this.traverseToIndex(index -1)
+        const unWantedNode = leader.next
+        leader.next = unWantedNode.next
+        this.length --
+      }
+
+
        traverseToIndex(index) {
         let counter  = 0
         let currentNode = this.head
@@ -77,10 +86,15 @@ myLinkedList.append(12)
 myLinkedList.append(14)
 myLinkedList.prepend(2)
 myLinkedList.insert(2, 99)
+myLinkedList.remove(2)
 myLinkedList.PrintList()
 // console.log(myLinkedList)
 
+//InitiallY : 2--> 10 --> 5 --> 12 --> 14-->null
+// Then insert 99 to the 2nd index
 //  2--> 10 --> 5 --> 12 --> 14-->null
 //                \   /
 //                  99
-//Final Output -->  2--> 10 -->99--> 5 --> 12 --> 14-->null
+//Now -->  2--> 10 -->99--> 5 --> 12 --> 14-->null
+//Now delete the item of the 2nd index
+//2--> 10 --> 5 --> 12 --> 14-->null
