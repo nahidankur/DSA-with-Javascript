@@ -119,3 +119,5 @@ myLinkedList.PrintList()
 //Now -->  2--> 10 -->99--> 5 --> 12 --> 14-->null
 //Now delete the item of the 2nd index
 //2--> 10 --> 5 --> 12 --> 14-->null
+
+//final reverse output: 14 --> 12 --> 5 --> 10 --> 2
