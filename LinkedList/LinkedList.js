@@ -80,4 +80,7 @@ myLinkedList.insert(2, 99)
 myLinkedList.PrintList()
 // console.log(myLinkedList)
 
-//Output:  2--> 10 --> 5 --> 12 --> 14-->null
+//  2--> 10 --> 5 --> 12 --> 14-->null
+//                \   /
+//                  99
+//Final Output -->  2--> 10 -->99--> 5 --> 12 --> 14-->null
